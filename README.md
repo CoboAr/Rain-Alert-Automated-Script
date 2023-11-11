@@ -1,7 +1,7 @@
 # Rain-Alert-Automated-Script
 
 ## Requirements 
-pip install requests
+pip install requests     
 pip install twilio
 
 ## What is Rain Alert?
