@@ -44,8 +44,8 @@ if will_rain:
     message = client.messages \
         .create (
         body="It's going to rain today. Remember to bring an ☔️",
-        from_="+12054486863",
-        to="+12048811412"
+        from_="+1**********", // Twilio Phone number
+        to="+1**********"   // Phone number used to create Twilio Account
     )
 
     print(message.status)
