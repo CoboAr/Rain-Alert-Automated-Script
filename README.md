@@ -9,7 +9,7 @@ It is an automated script implemented using twilio package; os and requests pyth
 
 ## How does it work?
 The script gets data from OpenWeathermap API: https://openweathermap.org/current   
-In order to use this api, the user needs to create an account and creat an API_KEY. The API_KEY is used as an environmental variable. The request on the OpenWeathermap API takes as an argument a dictionary named weather_params which contains Latitude, Longitude, API_KEY and exlusion of current, minutes, and daily data. We are interested only for the hourly weather forecats. The latitude and longitude of any place can be found here: https://www.latlong.net/   
+In order to use this api, the user needs to create an account and create an API_KEY. The API_KEY is used as an environmental variable. The request on the OpenWeathermap API takes as an argument a dictionary named weather_params which contains Latitude, Longitude, API_KEY and exlusion of current, minutes, and daily data. We are interested only for the hourly weather forecats. The latitude and longitude of any place can be found here: https://www.latlong.net/   
 The scrip slices the data in the first 12 hourly keyes. It gets the value of id and check if it is higher or lower than 700. If it is higher it sets the will_rain variable to True. If it is lower than 700 the will_rain variable remains False.    
 Next, if the will_rain variable is True the script sends a text message to the phone number registerd in the twilio account.
 
