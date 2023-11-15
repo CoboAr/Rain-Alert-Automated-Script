@@ -15,7 +15,7 @@ Next, if the will_rain variable is True the script sends a text message to the p
 
 
 ## Twilio account setup
-Create an account at: https://console.twilio.com/
+Create an account at: https://console.twilio.com/         
 Note: Only the phone number used to register will serve as the phone number that will  get the text message rain alert.   
 Upon registering and validating the Twilio account, the user has access to the 1) Account SID, 2) AUTH TOKEN, 3) The Twilio phone number assigned and a free trial credit of $15. 
 
